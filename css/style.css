@@ -173,14 +173,14 @@ body .nav a .sixth-menu-item:hover::before {
         width: 75px;
     }
 }
-body .first-section {
+body .section-first {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 @media all and (min-width: 992px) {
-    body .first-section {
+    body .section-first {
         align-items: flex-start;
         margin-left: 10%;
         position: absolute;
@@ -188,7 +188,7 @@ body .first-section {
         transform: translateY(-50%);
     }
 }
-body .first-section .section-title {
+body .section-first .section-title {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     text-transform: capitalize;
@@ -200,7 +200,7 @@ body .first-section .section-title {
     
 }
 @media all and (min-width: 768px) {
-    body .first-section .section-title {
+    body .section-first .section-title {
         font-family: 'Raleway', sans-serif;
         text-transform: capitalize;
         font-size: 80px;
@@ -209,11 +209,11 @@ body .first-section .section-title {
     }
 }
 @media all and (min-width: 992px) {
-    body .first-section .section-title {
+    body .section-first .section-title {
         padding-left: 0;    
     }
 }
-body .first-section .section-text {
+body .section-first .section-text {
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     padding: 20px;
@@ -224,7 +224,7 @@ body .first-section .section-text {
     color: #262626;
 }
 @media all and (min-width: 768px) {
-    body .first-section .section-text {
+    body .section-first .section-text {
         font-family: 'Raleway', sans-serif;
         font-size: 16px;
         padding: 30px;
@@ -235,14 +235,14 @@ body .first-section .section-text {
     }
 }
 @media all and (min-width: 992px) {
-    body .first-section .section-text {
+    body .section-first .section-text {
         padding-left: 0;
         margin: 0;
         padding: 0;
         width: 400px;
     }
 }
-body .first-section button {
+body .section-first button {
     height: 55px;
     width: 200px;
     background-color: #ff6033;
@@ -254,19 +254,19 @@ body .first-section button {
     outline: none;
     margin-bottom: 40px;
 }
-body .first-section button:hover {
+body .section-first button:hover {
     cursor: pointer;
 }
-body .first-section button:active {
+body .section-first button:active {
     box-shadow: 1px 2px 5px #000;
 }
 @media all and (min-width: 768px) {
-    body .first-section button {
+    body .section-first button {
         margin: 40px 0;
     }
 }
 @media all and (min-width: 992px) {
-    body .first-section button {
+    body .section-first button {
         margin: 40px 0;
         width: 150px;
         height: 40px;
@@ -274,9 +274,90 @@ body .first-section button:active {
     }
 }
 
+/*ABOUT US SECTIONS*/
 
-
-
+body .section-second {
+    min-height: 100vh;
+    background-color: #00baba;
+}
+@media all and (min-width: 768px) {
+    body .section-second {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media all and (min-width: 992px) {
+    body .section-second {
+        align-items: flex-end;
+        background-image: url('../images/second-section.png');
+        background-repeat: no-repeat;
+        background-size: 40%;
+        background-position: center left 10%;
+        text-align: center;
+    }
+}
+body .section-second .about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media all and (min-width: 992px) {
+    body .section-second .about-us {
+        width: 50%;
+        margin-right: 5%;
+    }
+}
+body .section-second .about-us .section-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    text-transform: capitalize;
+    font-size: 60px;
+    padding: 20px 10px;
+    text-align: center;
+    color: #ffffff;
+}
+@media all and (min-width: 768px) {
+    body .section-second .about-us .section-title {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 800;
+        text-transform: capitalize;
+        font-size: 80px;
+        padding: 20px 10px;
+        text-align: center;
+    }
+}
+body .section-second .about-us .section-text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    text-align: justify;
+    max-width: 300px;
+    margin: 5px 0;
+    line-height: 28px;
+    color: #ffffff;
+}
+body .section-second .about-us .section-text:nth-child(2) {
+    margin-bottom: 20px;
+}
+@media all and (min-width: 768px) {
+    body .section-second .about-us .section-text {
+        font-family: 'Raleway', sans-serif;
+        font-size: 16px;
+        padding: 30px;
+        text-align: justify;
+        max-width: 500px;
+        margin: 10px 0;
+        line-height: 36px;
+    }
+}
+@media all and (min-width: 992px) {
+    body .section-second .about-us .section-text {
+        width: 400px;
+        padding: 0;
+    }
+}
 
 
 
