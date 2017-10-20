@@ -360,9 +360,170 @@ body .section-second .about-us .section-text:nth-child(2) {
     }
 }
 
+/*SERVICES SECTIONS*/
 
-
-
+body .section-third {
+    min-height: 100vh;
+    background-color: #70bfff;
+}
+@media all and (min-width: 768px) {
+    body .section-third {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media all and (min-width: 992px) {
+    body .section-third {
+        display: flex;
+        flex-direction: row-reverse;
+        background-image: url('../images/tomatoes.png');
+        background-repeat: no-repeat;
+        background-position: center right 20%;
+    }
+}
+body .section-third .section-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    text-transform: capitalize;
+    font-size: 60px;
+    padding: 40px 10px;
+    text-align: center;
+    color: #ffffff;
+}
+@media all and (min-width: 768px) {
+    body .section-third .section-title {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 800;
+        text-transform: capitalize;
+        font-size: 80px;
+        padding: 50px 10px;
+        text-align: center;
+    }
+}
+@media all and (min-width: 992px) {
+    body .section-third .section-title {
+        width: 40%;
+    }
+}
+body .section-third .services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media all and (min-width: 992px) {
+    body .section-third .services {
+        width: 40%;
+    }
+}
+body .section-third .services .service {
+    display: flex;
+    margin: 15px 0;
+}
+body .section-third .services .service .service-text {
+    width: 180px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    background-color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+@media all and (min-width: 768px) {
+    body .section-third .services .service .service-text {
+        width: 360px;
+        padding: 40px 0;
+    }
+}
+body .section-third .services .service:nth-child(3) .service-text {
+    padding-bottom: 0;
+    padding-top: 10px;
+}
+@media all and (min-width: 768px) {
+    body .section-third .services .service:nth-child(3) .service-text {
+        padding: 40px 0;
+    }
+}
+body .section-third .services .service .service-img-1 {
+    width: 79px;
+    height: 84px;
+    border-left: 1px solid #9d9d9d;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url('../images/basket-img.png');
+}
+@media all and (min-width: 768px) {
+    body .section-third .services .service .service-img-1 {
+        width: 99px;
+        height: 104px;
+        border-left: 1px solid #9d9d9d;
+        background-color: #fff;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}
+body .section-third .services .service .service-img-2 {
+    width: 79px;
+    height: 84px;
+    border-left: 1px solid #9d9d9d;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url('../images/hand-img.png');
+}
+@media all and (min-width: 768px) {
+    body .section-third .services .service .service-img-2 {
+        width: 99px;
+        height: 104px;
+        border-left: 1px solid #9d9d9d;
+        background-color: #fff;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}
+body .section-third .services .service .service-img-3 {
+    width: 79px;
+    height: 84px;
+    border-left: 1px solid #9d9d9d;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url('../images/globe-img.png');
+}
+@media all and (min-width: 768px) {
+    body .section-third .services .service .service-img-3 {
+        width: 99px;
+        height: 104px;
+        border-left: 1px solid #9d9d9d;
+        background-color: #fff;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}
+body .section-third .services .service .service-img-4 {
+    width: 79px;
+    height: 84px;
+    border-left: 1px solid #9d9d9d;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url('../images/carrot-img.png');
+}
+@media all and (min-width: 768px) {
+    body .section-third .services .service .service-img-4 {
+        width: 99px;
+        height: 104px;
+        border-left: 1px solid #9d9d9d;
+        background-color: #fff;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}
+body .section-third .services .service:last-child {
+    margin-bottom: 40px;
+}
 
 
 
