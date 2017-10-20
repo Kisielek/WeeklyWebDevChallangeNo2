@@ -525,13 +525,64 @@ body .section-third .services .service:last-child {
     margin-bottom: 40px;
 }
 
+/*GALLERY SECTION*/
 
 
 
 
+body .gallery {
+    background-color: #ffe92f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
 
-
-
+}
+body .gallery .section-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    text-transform: capitalize;
+    font-size: 60px;
+    padding: 20px 10px;
+    text-align: center;
+    color: #262626;
+}
+@media all and (min-width: 768px) {
+    body .gallery .section-title {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 800;
+        text-transform: capitalize;
+        font-size: 80px;
+        padding: 50px 10px;
+        text-align: center;
+    }
+}
+body .gallery .section-text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    padding: 20px;
+    text-align: justify;
+    max-width: 300px;
+    margin: 10px 0;
+    line-height: 28px;
+    color: #262626;
+}
+@media all and (min-width: 768px) {
+    body .gallery .section-text {
+        font-family: 'Raleway', sans-serif;
+        font-size: 16px;
+        padding: 20px;
+        text-align: justify;
+        max-width: 500px;
+        margin: 10px 0;
+        line-height: 36px;
+    }
+}
+@media all and (min-width: 992px) {
+    body .gallery .section-text {
+        width: 500px;
+    }
+}
 
 
 
