@@ -11,34 +11,34 @@
 
 <body>
  
-    <div class="menu">
+    <div class="menu" id="first">
         <header>
             <div><button class="btn-menu"></button></div>
             <nav>
                 <ul class="nav">
-                    <a href="#">
+                    <a class="scroll" href="#first">
                         <li class="first-menu-item">Home</li>
                     </a>
-                    <a href="#">
+                    <a class="scroll" href="#second">
                         <li class="second-menu-item">About</li>
                     </a>
-                    <a href="#">
+                    <a class="scroll" href="#third">
                         <li class="third-menu-item">Services</li>
                     </a>
-                    <a href="#">
+                    <a class="scroll" href="#fourth">
                         <li class="fourth-menu-item">Gallery</li>
                     </a>
-                    <a href="#">
+                    <a class="scroll" href="#fifth">
                         <li class="fifth-menu-item">Blog</li>
                     </a>
-                    <a href="#">
+                    <a class="scroll" href="#sixth">
                         <li class="sixth-menu-item">Contact</li>
                     </a>
                 </ul>
             </nav>
         </header>
 <!-- Pierwsza sekcja z truskawka        -->
-        <section class="section-first">
+        <section class="section-first" >
 
             <div class="section-title">Fresh Life</div>
             <div class="section-text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</div>
@@ -46,7 +46,7 @@
         </section>
     </div>
 <!--  Druga sekcja z filizanka  -->
-        <section class="section-second">
+        <section class="section-second" id="second">
 
         <div class="about-us">
             <div class="section-title">About us</div>
@@ -55,7 +55,7 @@
         </div>
     </section>
 <!--    Trzecia sekcja z pomidorkami-->
-    <section class="section-third">
+    <section class="section-third" id="third">
         <div class="section-title">Our services</div>
 
         <div class="services">
@@ -79,7 +79,7 @@
     </section>
 
     <!--  Czwarta sekcja z galeria  -->
-    <section class="section-fourth">
+    <section class="section-fourth" id="fourth">
 
     <div class="gallery">
             <div class="section-title">Gallery</div>
@@ -102,7 +102,7 @@
             var stickyNav = function(){
                 var ScrollY = $(window).scrollTop();
 
-                if (ScrollY > NavY) {
+                if (ScrollY => NavY) {
                     $('.nav').addClass('sticky');
                 } else {
                     $('.nav').removeClass('sticky');
@@ -117,6 +117,18 @@
         });
 
     </script>
+    <script>$(document).ready(function(){
+            $('a[href^="#"]').on('click',function (e) {
+                e.preventDefault();
+                var target = this.hash;
+                $target = $(target);
+                $('html, body').stop().animate({
+                    'scrollTop':  $target.offset().top //no need of parseInt here
+                }, 900, 'swing', function () {
+                    window.location.hash = target;
+                });
+            });
+        });</script>
 </body>
 
 

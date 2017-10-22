@@ -78,7 +78,6 @@ body .sticky {
 @media all and (min-width: 992px) {
     body .nav {
         display: flex !important;
-
         top: 0px;
         right: 0;
         float:right;
