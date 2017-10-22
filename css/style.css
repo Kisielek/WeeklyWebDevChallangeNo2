@@ -65,16 +65,26 @@ body header div .btn-menu:hover {
 body .nav {
     display: none;
     position: relative;
-    background-color: #ffffff;
+    background-color: transparent;
+}
+body .sticky {
+
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    float:right;
 }
 @media all and (min-width: 992px) {
     body .nav {
         display: flex !important;
-        background-color: transparent;
-        top: 25px;
-        right: 10%;
+
+        top: 0px;
+        right: 0;
+        float:right;
     }
 }
+
 body .nav a {
     position: relative;
     text-transform: uppercase;
@@ -83,7 +93,9 @@ body .nav a {
     font-weight: bold;
     font-size: 24px;
     color: #262626;
+    float:right;
 }
+
 @media all and (min-width: 992px) {
     body .nav a {
         font-size: 16px;
@@ -94,6 +106,7 @@ body .nav a li {
     padding: 25px 20px;
     width: calc(60%);
     list-style-type: none;
+    display: block;
 }
 body .nav a .first-menu-item:hover::before {
     content: '';
