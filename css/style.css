@@ -585,9 +585,52 @@ body .gallery .section-text {
 }
 
 
-
-
-
+body .gallery .images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+body .gallery .images img {
+    float: left;
+    width: 280px;
+    margin: 20px 0;
+}
+@media all and (min-width: 1200px) {
+    body .gallery .images {
+        display: block;
+        position: relative;
+        width: 1170px;
+    }
+}
+@media all and (min-width: 768px) {
+    body .gallery .images img {
+        width: 560px;
+    }
+}
+@media all and (min-width: 1200px) {
+    body .gallery .images img {
+        margin: 0 0;
+    }
+body .gallery .images img:nth-child(1) {
+    width: 770px;
+}
+body .gallery .images img:nth-child(2),
+body .gallery .images img:nth-child(3) {
+    width: 370px;
+    margin-left: 30px;
+}
+body .gallery .images img:nth-child(3) {
+    margin-top: 30px;
+}
+body .gallery .images img:nth-child(4),
+body .gallery .images img:nth-child(5) {
+    width: 570px;
+    margin-top: 30px;
+}
+body .gallery .images img:nth-child(5) {
+    margin-left: 30px;
+}
 
 
 
