@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <title>Weekly WebDev Challange no. 2</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
- 
+
     <div class="menu" id="first">
         <header>
             <div><button class="btn-menu"></button></div>
@@ -37,16 +37,16 @@
                 </ul>
             </nav>
         </header>
-<!-- Pierwsza sekcja z truskawka        -->
-        <section class="section-first" >
+        <!-- Pierwsza sekcja z truskawka        -->
+        <section class="section-first">
 
             <div class="section-title">Fresh Life</div>
             <div class="section-text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</div>
             <button>GET FREE NOW</button>
         </section>
     </div>
-<!--  Druga sekcja z filizanka  -->
-        <section class="section-second" id="second">
+    <!--  Druga sekcja z filizanka  -->
+    <section class="section-second" id="second">
 
         <div class="about-us">
             <div class="section-title">About us</div>
@@ -54,7 +54,7 @@
             <div class="section-text">Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</div>
         </div>
     </section>
-<!--    Trzecia sekcja z pomidorkami-->
+    <!--    Trzecia sekcja z pomidorkami-->
     <section class="section-third" id="third">
         <div class="section-title">Our services</div>
 
@@ -81,16 +81,16 @@
     <!--  Czwarta sekcja z galeria  -->
     <section class="section-fourth" id="fourth">
 
-    <div class="gallery">
+        <div class="gallery">
             <div class="section-title">Gallery</div>
             <div class="section-text">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-        <div class="images">
-            <img src="images/img1.jpg">
-            <img src="images/img2.jpg">
-            <img src="images/img3.jpg">
-            <img src="images/img4.jpg">
-            <img src="images/img5.jpg">
-        </div>
+            <div class="images">
+                <img src="images/img1.jpg">
+                <img src="images/img2.jpg">
+                <img src="images/img3.jpg">
+                <img src="images/img4.jpg">
+                <img src="images/img5.jpg">
+            </div>
         </div>
     </section>
 
@@ -105,17 +105,16 @@
 
     <footer>
         <p class="rights">© 2017 Company. All right reserved.</p>
-        <p >Made by Hubert Kisielewski</p>
+        <p>Made by Hubert Kisielewski</p>
     </footer>
 
 
     <script src="js/jquery-3.2.1.min.js"></script>
     <script>
-
         $(document).ready(function() {
             var NavY = $('.nav').offset().top;
 
-            var stickyNav = function(){
+            var stickyNav = function() {
                 var ScrollY = $(window).scrollTop();
 
                 if (ScrollY => NavY) {
@@ -133,18 +132,21 @@
         });
 
     </script>
-    <script>$(document).ready(function(){
-            $('a[href^="#"]').on('click',function (e) {
+    <script>
+        $(document).ready(function() {
+            $('a[href^="#"]').on('click', function(e) {
                 e.preventDefault();
                 var target = this.hash;
                 $target = $(target);
                 $('html, body').stop().animate({
-                    'scrollTop':  $target.offset().top //no need of parseInt here
-                }, 900, 'swing', function () {
+                    'scrollTop': $target.offset().top //no need of parseInt here
+                }, 900, 'swing', function() {
                     window.location.hash = target;
                 });
             });
-        });</script>
+        });
+
+    </script>
 
 </body>
 
